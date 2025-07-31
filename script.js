@@ -18,3 +18,10 @@ addTask.addEventListener("click", function () {
         alert("Enter task");
     }
 });
+
+list.addEventListener("click", function (event) {
+    if (event.target.nodeName == "BUTTON") {
+        let listItem = event.target.parentElement;
+        listItem.remove();
+    }
+});
